@@ -1,0 +1,26 @@
+{
+    "name": "ahmetbarut/laravel-auto-factory",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AhmetBarut\\LaravelAutoFactory\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ahmet Barut",
+            "email": "ahmetbarut588@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/dbal": "^3.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AhmetBarut\\LaravelAutoFactory\\Providers\\LaravelAutoFactoryServiceProvider"
+            ]
+        }
+    }
+}

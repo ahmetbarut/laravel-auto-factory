@@ -1,0 +1,38 @@
+<?php
+
+return [
+    'faker_types' => [
+        'string' => 'name',
+        'integer' => 'numberBetween',
+        'float' => 'randomFloat',
+        'boolean' => 'boolean',
+        'date' => 'date',
+        'datetime' => 'dateTime',
+        'time' => 'time',
+        'timestamp' => 'dateTime',
+        'text' => 'text',
+        'json' => 'json',
+        'bigint' => null,
+        'decimal' => 'randomFloat',
+        'double' => 'randomFloat',
+        'enum' => 'randomElement',
+        'jsonb' => 'json',
+        'object' => 'json',
+        'uuid' => 'uuid',
+        'binary' => 'binary',
+        'binary_uuid' => 'uuid',
+        'binary_md5' => 'md5',
+        'binary_sha1' => 'sha1',
+        'binary_sha256' => 'sha256',
+        'binary_sha512' => 'sha512',
+        'binary_crc32' => 'crc32',
+        'binary_crc32b' => 'crc32b',
+        'binary_hash' => 'hash',
+        'binary_hash_sha256' => 'hash',
+        'binary_hash_sha512' => 'hash',
+        'binary_hash_bcrypt' => 'bcrypt',
+        'binary_hash_argon2i' => 'argon2i',
+        'binary_hash_argon2id' => 'argon2id',
+        'binary_hash_pbkdf2' => 'pbkdf2',
+    ]
+];
