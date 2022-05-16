@@ -13,9 +13,6 @@
             "email": "ahmetbarut588@gmail.com"
         }
     ],
-    "require": {
-        "doctrine/dbal": "^3.3"
-    },
     "extra": {
         "laravel": {
             "providers": [
