@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\DB;
 
 class AutoFactoryController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(config('auto-factory.middleware'));
+    }
+    
     public function index()
     {
         $dbName = config('database.connections.' . config("database.default") . '.database');
@@ -43,7 +48,7 @@ class AutoFactoryController extends Controller
         for ($i = 0; $i < $count; $i++) {
             $rows[] = $model->setTable($table)->factory()->create();
         }
-        
+
         return $rows;
     }
 }

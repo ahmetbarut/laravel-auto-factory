@@ -34,5 +34,9 @@ return [
         'binary_hash_argon2i' => 'argon2i',
         'binary_hash_argon2id' => 'argon2id',
         'binary_hash_pbkdf2' => 'pbkdf2',
-    ]
+    ],
+
+    'middleware' => [
+        'auth',
+    ],
 ];
